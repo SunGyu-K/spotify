@@ -1,0 +1,14 @@
+/* index.css */
+header {
+    background-color: #111;
+    height:80px;
+    display:flex; flex-flow:row nowrap;/* 수평으로 줄바꿈 없음 */
+    justify-content:space-between;
+    align-items:center;/*(수직에서 중앙으로 위치) flex-end, flex-start */
+    padding:0 20px;
+}
+header * {color: #fff;}
+header h1 {width:32px;}
+header h1 a img {width:100%;}
+form {display:flex; felx-flow:row nowrap;}
+header .snb {display:flex; felx-flow:row nowrap; gap:20px;}
