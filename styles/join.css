@@ -8,13 +8,14 @@ body {background-color: black;}
     padding: 150px 0 0 0;
 }
 #wrap main {
+    width: 420px;
 }
 #wrap main h1 {
     width: 200px;
 }
 #wrap main h1 img {
     width: 100%;
-    margin: 0 20px;
+    margin: 0 110px;
 }
 #wrap main .tab_menu{
     margin:30px 0 20px;
@@ -23,17 +24,69 @@ body {background-color: black;}
     justify-content: center;
     gap:60px
 }
+#wrap main .tab_menu * {color: #FFF;}
 #wrap main .tab_menu .sign_in {
-    color: #FFF;
 }
 #wrap main .tab_menu .active {
-    border-bottom: 2px solid #1ED760;
-    color: #FFF;
+    /* border-bottom: 2px solid #1ED760; */
+    position:relative;
 }
+#wrap main .tab_menu .active::after {
+    content:''; display:block;
+    width: 80%; height:2px;
+    /* background-color: aqua; */
+    background:linear-gradient(90deg, transparent, #1Ed760, transparent);
+    position:absolute; left:10%; bottom:-10px;
+}
+#wrap main .tab_menu .active::before {
+    content:''; display:block;
+    width: 100%; height:50%;
+    position:absolute; left:0;bottom:0; z-index:-1;
+    background-color: rgba(255,255,0,0.8);
+}
+
 #wrap main .email{}
 #wrap main .email h2{
 }    
 #wrap main .email #user_email {}
 #wrap main .email #email_next_btn {
     color:#FFF
+}
+/* 가입 양식 */
+#wrap main form[name*=join] {
+    background-color: purple;
+}
+/* ----------------   이메일주소입력 */
+
+
+#wrap main form[name*=join] .email {}
+#wrap main form[name*=join] .email_join {}
+#wrap main form[name*=join] .email_join h2 {}
+#wrap main form[name*=join] .email_join p {
+    background-color: aqua;
+    
+}
+#wrap main form[name*=join] .email_join p #user_email {
+    background-color: lime;
+    width: 420px; height:40px;
+}
+#wrap main form[name*=join] .email_join p #email_next_btn {}
+
+/* 구글, 애플로 가입하기 */
+#wrap main form[name*=join] .or_join .google {
+    background-image:url(../images/구글.png);
+}
+#wrap main form[name*=join] .or_join .apple {
+    background-image:url(../images/Vector.png);
+}
+#wrap main form[name*=join] .or_join a[href*=http] {}
+#wrap main form[name*=join] .or_join a[class*=le] {}
+#wrap main form[name*=join] .or_join a {
+    background-repeat:no-repeat;
+    border:1px solid #fff; color:#fff;
+    border-radius:20px;
+    display:block; line-height:40px;
+    text-align: center;
+    background-position: 10px center;
+    margin-bottom:10px;
 }

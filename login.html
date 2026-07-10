@@ -20,11 +20,11 @@
                     <a href="./join.html" class="sign_up">SIGN UP</a>
             </div>
             <form action="#" method="post" name="login_form"><!-- form:pout 보안이 필요한 폼 서버 -->
-                <fieldset class="active"><!-- 로그인을 위한 입력그룹 뜻 fieldset = div와 같은 개념 -->
+                <fieldset class="id_pw"><!-- 로그인을 위한 입력그룹 뜻 fieldset = div와 같은 개념 -->
                     <legend>아이디, 비밀번호 입력그룹</legend><!-- 자식 수로 세지 않기, 디자인에서 보이지 않는 의미적인 제목 용도 -->
                     <input type="text" name="uesr_id" placeholder="아이디를 입력하세요.">
                     <!-- (위) text 한줄 글자 입력칸 (아이디, 이름, 닉네임, 주소, 추천인, 주민등록번호 앞, 강아지이름 등)-->
-                    <input type="text" name="password" placeholder="비밀번호를 입력하세요">
+                    <input type="password" name="uesr_pw" placeholder="비밀번호를 입력하세요">
                     <!-- (위) password 보안 글자 입력칸(비밀번호, 비밀번호재입력, 주민등록번호 뒷자리, 게시판비밀글 등)-->
                 </fieldset>
                 <fieldset class="login_y_g">
@@ -35,7 +35,7 @@
                     <legend>로그인, 찾기 그룹</legend>
                     <button type="button" id="login_btn">LOGIN</button><!-- button:button -->
                     <!-- (위) type=button (범용(모든기능가능), 자바스크립트 후처리로 모든 기능가능 -->
-                    <a href="#" class="비밀번호 찾기">비밀번호찾기</a>
+                    <a href="#" class="btn_search_g">비밀번호찾기</a>
                 </fieldset>  
             </form>
         </main>
